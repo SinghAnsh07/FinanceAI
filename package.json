@@ -1,0 +1,13 @@
+{
+  "name": "zorvyn-assignment",
+  "version": "1.0.0",
+  "description": "Finance Dashboard — fullstack monorepo",
+  "scripts": {
+    "dev": "concurrently --names \"backend,frontend\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix finance-backend\" \"npm run dev --prefix finance-frontend\"",
+    "start": "concurrently --names \"backend,frontend\" --prefix-colors \"cyan,magenta\" \"npm run start --prefix finance-backend\" \"npm run start --prefix finance-frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
+
